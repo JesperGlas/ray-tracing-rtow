@@ -1,0 +1,2 @@
+/usr/bin/ar qc librt_vec3.a  CMakeFiles/rt_vec3.dir/rt_vec3.cpp.o
+/usr/bin/ranlib librt_vec3.a

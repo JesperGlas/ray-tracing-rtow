@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/jesper/dev/cpp/ray-tracing-rtow/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -123,6 +123,19 @@ Main/fast:
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
 .PHONY : Main/fast
 
+#=============================================================================
+# Target rules for targets named rt_vec3
+
+# Build rule for target.
+rt_vec3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rt_vec3
+.PHONY : rt_vec3
+
+# fast build rule for target.
+rt_vec3/fast:
+	$(MAKE) -f CMakeFiles/rt_vec3.dir/build.make CMakeFiles/rt_vec3.dir/build
+.PHONY : rt_vec3/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,18 +163,49 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rt_vec3.o: rt_vec3.cpp.o
+
+.PHONY : rt_vec3.o
+
+# target to build an object file
+rt_vec3.cpp.o:
+	$(MAKE) -f CMakeFiles/rt_vec3.dir/build.make CMakeFiles/rt_vec3.dir/rt_vec3.cpp.o
+.PHONY : rt_vec3.cpp.o
+
+rt_vec3.i: rt_vec3.cpp.i
+
+.PHONY : rt_vec3.i
+
+# target to preprocess a source file
+rt_vec3.cpp.i:
+	$(MAKE) -f CMakeFiles/rt_vec3.dir/build.make CMakeFiles/rt_vec3.dir/rt_vec3.cpp.i
+.PHONY : rt_vec3.cpp.i
+
+rt_vec3.s: rt_vec3.cpp.s
+
+.PHONY : rt_vec3.s
+
+# target to generate assembly for a file
+rt_vec3.cpp.s:
+	$(MAKE) -f CMakeFiles/rt_vec3.dir/build.make CMakeFiles/rt_vec3.dir/rt_vec3.cpp.s
+.PHONY : rt_vec3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Main"
+	@echo "... rebuild_cache"
+	@echo "... rt_vec3"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rt_vec3.o"
+	@echo "... rt_vec3.i"
+	@echo "... rt_vec3.s"
 .PHONY : help
 
 

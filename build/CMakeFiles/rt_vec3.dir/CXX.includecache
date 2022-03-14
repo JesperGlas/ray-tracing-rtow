@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jesper/dev/cpp/ray-tracing-rtow/src/main.cpp
-iostream
--
-glm/glm.hpp
-/home/jesper/dev/cpp/ray-tracing-rtow/src/glm/glm.hpp
+/home/jesper/dev/cpp/ray-tracing-rtow/src/rt_vec3.cpp
 rt_vec3.hpp
 /home/jesper/dev/cpp/ray-tracing-rtow/src/rt_vec3.hpp
 

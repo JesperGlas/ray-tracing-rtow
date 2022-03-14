@@ -1,3 +1,4 @@
-/home/jesper/dev/cpp/ray-tracing-rtow/build/CMakeFiles/rebuild_cache.dir
 /home/jesper/dev/cpp/ray-tracing-rtow/build/CMakeFiles/edit_cache.dir
 /home/jesper/dev/cpp/ray-tracing-rtow/build/CMakeFiles/Main.dir
+/home/jesper/dev/cpp/ray-tracing-rtow/build/CMakeFiles/rebuild_cache.dir
+/home/jesper/dev/cpp/ray-tracing-rtow/build/CMakeFiles/rt_vec3.dir
