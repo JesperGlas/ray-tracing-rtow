@@ -150,33 +150,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-raytracer.o: raytracer.cpp.o
-
-.PHONY : raytracer.o
-
-# target to build an object file
-raytracer.cpp.o:
-	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/raytracer.cpp.o
-.PHONY : raytracer.cpp.o
-
-raytracer.i: raytracer.cpp.i
-
-.PHONY : raytracer.i
-
-# target to preprocess a source file
-raytracer.cpp.i:
-	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/raytracer.cpp.i
-.PHONY : raytracer.cpp.i
-
-raytracer.s: raytracer.cpp.s
-
-.PHONY : raytracer.s
-
-# target to generate assembly for a file
-raytracer.cpp.s:
-	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/raytracer.cpp.s
-.PHONY : raytracer.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +162,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... raytracer.o"
-	@echo "... raytracer.i"
-	@echo "... raytracer.s"
 .PHONY : help
 
 

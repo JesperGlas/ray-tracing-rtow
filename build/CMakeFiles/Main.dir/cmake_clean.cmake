@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Main.dir/main.cpp.o"
-  "CMakeFiles/Main.dir/raytracer.cpp.o"
   "Main"
   "Main.pdb"
 )

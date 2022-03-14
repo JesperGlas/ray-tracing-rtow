@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jesper/dev/cpp/ray-tracing-rtow/src/raytracer.cpp
-raytracer.hpp
-/home/jesper/dev/cpp/ray-tracing-rtow/src/raytracer.hpp
-
-/home/jesper/dev/cpp/ray-tracing-rtow/src/raytracer.hpp
+/home/jesper/dev/cpp/ray-tracing-rtow/src/main.cpp
 iostream
 -
 

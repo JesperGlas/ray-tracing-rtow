@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jesper/dev/cpp/ray-tracing-rtow/src/main.cpp" "/home/jesper/dev/cpp/ray-tracing-rtow/build/CMakeFiles/Main.dir/main.cpp.o"
-  "/home/jesper/dev/cpp/ray-tracing-rtow/src/raytracer.cpp" "/home/jesper/dev/cpp/ray-tracing-rtow/build/CMakeFiles/Main.dir/raytracer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
