@@ -10,6 +10,9 @@ add_library(rt_vec3 rt_vec3.cpp)
 add_executable(Main main.cpp)
 
 target_link_directories(Main PUBLIC
-    glm,
+    glm
+)
+
+target_link_libraries(Main PUBLIC
     rt_vec3
 )

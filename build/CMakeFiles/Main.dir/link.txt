@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/Main.dir/main.cpp.o  -o Main   -L/home/jesper/dev/cpp/ray-tracing-rtow/src/glm,  -L/home/jesper/dev/cpp/ray-tracing-rtow/src/rt_vec3 
+/usr/bin/c++     CMakeFiles/Main.dir/main.cpp.o  -o Main   -L/home/jesper/dev/cpp/ray-tracing-rtow/src/glm  -Wl,-rpath,/home/jesper/dev/cpp/ray-tracing-rtow/src/glm librt_vec3.a 

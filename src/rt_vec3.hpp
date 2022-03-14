@@ -5,12 +5,18 @@
 
 namespace rt
 {
+
     class vec3 : public glm::vec3
     {
     public:
-        vec3() : glm::vec3() {};
-        vec3(float v) : glm::vec3(v) {};
+        vec3();
+        vec3(float v);
+        vec3(float x, float y, float z);
+
+        float length_squared() const;
+        float length() const;
     };
+
 }
 
 #endif
